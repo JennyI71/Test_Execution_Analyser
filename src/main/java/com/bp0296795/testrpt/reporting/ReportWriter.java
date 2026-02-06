@@ -1,4 +1,4 @@
-package com.example.testrpt.reporting;
+package com.bp0296795.testrpt.reporting;
 
 import java.io.IOException;
 import java.nio.file.Files;

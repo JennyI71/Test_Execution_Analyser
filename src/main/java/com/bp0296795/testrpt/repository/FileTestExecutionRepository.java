@@ -1,7 +1,7 @@
-package com.example.testrpt.repository;
+package com.bp0296795.testrpt.repository;
 
-import com.example.testrpt.model.TestExecutionRun;
-import com.example.testrpt.util.JsonMapperFactory;
+import com.bp0296795.testrpt.model.TestExecutionRun;
+import com.bp0296795.testrpt.util.JsonMapperFactory;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 

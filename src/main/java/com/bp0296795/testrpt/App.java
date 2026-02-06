@@ -1,13 +1,13 @@
-package com.example.testrpt;
+package com.bp0296795.testrpt;
 
-import com.example.testrpt.repository.FileTestExecutionRepository;
-import com.example.testrpt.repository.TestExecutionRepository;
-import com.example.testrpt.service.TestExecutionAnalyser;
-import com.example.testrpt.service.TestExecutionValidator;
-import com.example.testrpt.service.TestReportService;
-import com.example.testrpt.service.ValidationError;
-import com.example.testrpt.reporting.ReportGenerator;
-import com.example.testrpt.reporting.ReportWriter;
+import com.bp0296795.testrpt.repository.FileTestExecutionRepository;
+import com.bp0296795.testrpt.repository.TestExecutionRepository;
+import com.bp0296795.testrpt.service.TestExecutionAnalyser;
+import com.bp0296795.testrpt.service.TestExecutionValidator;
+import com.bp0296795.testrpt.service.TestReportService;
+import com.bp0296795.testrpt.service.ValidationError;
+import com.bp0296795.testrpt.reporting.ReportGenerator;
+import com.bp0296795.testrpt.reporting.ReportWriter;
 
 public class App {
     public static void main(String[] args) {

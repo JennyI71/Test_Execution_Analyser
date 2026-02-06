@@ -1,9 +1,9 @@
-package com.example.testrpt.service;
+package com.bp0296795.testrpt.service;
 
-import com.example.testrpt.model.FailureType;
-import com.example.testrpt.model.TestCaseResult;
-import com.example.testrpt.model.TestExecutionRun;
-import com.example.testrpt.model.TestStatus;
+import com.bp0296795.testrpt.model.FailureType;
+import com.bp0296795.testrpt.model.TestCaseResult;
+import com.bp0296795.testrpt.model.TestExecutionRun;
+import com.bp0296795.testrpt.model.TestStatus;
 
 import java.time.LocalDateTime;
 import java.util.HashSet;

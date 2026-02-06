@@ -1,4 +1,4 @@
-package com.example.testrpt.service;
+package com.bp0296795.testrpt.service;
 
 public class ValidationError {
     private final String field;

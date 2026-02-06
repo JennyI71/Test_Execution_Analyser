@@ -1,9 +1,9 @@
-package com.example.testrpt.reporting;
+package com.bp0296795.testrpt.reporting;
 
-import com.example.testrpt.model.AnalysisResult;
-import com.example.testrpt.model.FailureType;
-import com.example.testrpt.model.TestExecutionRun;
-import com.example.testrpt.model.TestStatus;
+import com.bp0296795.testrpt.model.AnalysisResult;
+import com.bp0296795.testrpt.model.FailureType;
+import com.bp0296795.testrpt.model.TestExecutionRun;
+import com.bp0296795.testrpt.model.TestStatus;
 
 import java.time.format.DateTimeFormatter;
 import java.util.Comparator;

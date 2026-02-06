@@ -1,4 +1,4 @@
-package com.example.testrpt.model;
+package com.bp0296795.testrpt.model;
 
 import java.util.Collections;
 import java.util.HashSet;

@@ -6,7 +6,7 @@ Standalone Java CLI that ingests test execution runs from JSON, Analyses results
 ```powershell
 cd Test_Execution_Analyser
 mvn -q -DskipTests package
-mvn -q --% exec:java -Dexec.mainClass=com.example.testrpt.App -Dexec.args=".\src\main\resources\sample-runs.json .\report.txt"
+mvn -q --% exec:java -Dexec.mainClass=com.bp0296795.testrpt.App -Dexec.args=".\src\main\resources\sample-runs.json .\report.txt"
 mvn test
 ```
 
@@ -20,19 +20,19 @@ Outputs:
 - Windows PowerShell (commands below)
 
 ## Project Structure
-- `src/main/java/com/example/testrpt/App.java`: CLI entry point (parses args, calls the service).
-- `src/main/java/com/example/testrpt/service/TestReportService.java`: Orchestrates load -> validate -> Analyse -> report -> write.
-- `src/main/java/com/example/testrpt/repository/FileTestExecutionRepository.java`: Loads runs from JSON file.
-- `src/main/java/com/example/testrpt/service/TestExecutionValidator.java`: Validates input data and business rules.
-- `src/main/java/com/example/testrpt/service/TestExecutionAnalyser.java`: Aggregates counts and failure rates.
-- `src/main/java/com/example/testrpt/reporting/ReportGenerator.java`: Builds the human-readable report string.
-- `src/main/java/com/example/testrpt/reporting/ReportWriter.java`: Writes report to console and timestamped file in `reports/`.
+- `src/main/java/com/bp0296795/testrpt/App.java`: CLI entry point (parses args, calls the service).
+- `src/main/java/com/bp0296795/testrpt/service/TestReportService.java`: Orchestrates load -> validate -> Analyse -> report -> write.
+- `src/main/java/com/bp0296795/testrpt/repository/FileTestExecutionRepository.java`: Loads runs from JSON file.
+- `src/main/java/com/bp0296795/testrpt/service/TestExecutionValidator.java`: Validates input data and business rules.
+- `src/main/java/com/bp0296795/testrpt/service/TestExecutionAnalyser.java`: Aggregates counts and failure rates.
+- `src/main/java/com/bp0296795/testrpt/reporting/ReportGenerator.java`: Builds the human-readable report string.
+- `src/main/java/com/bp0296795/testrpt/reporting/ReportWriter.java`: Writes report to console and timestamped file in `reports/`.
 - `src/main/resources/sample-runs.json`: Sample input to run the app quickly.
 - `src/test/java/...`: Unit tests.
 
 ## Run (Custom Input)
 ```powershell
-mvn -q --% exec:java -Dexec.mainClass=com.example.testrpt.App -Dexec.args="C:\path\to\input.json C:\path\to\report.txt"
+mvn -q --% exec:java -Dexec.mainClass=com.bp0296795.testrpt.App -Dexec.args="C:\path\to\input.json C:\path\to\report.txt"
 ```
 
 The output is always timestamped and written into a `reports` folder, e.g. `reports/report-20260206-143010.txt`.

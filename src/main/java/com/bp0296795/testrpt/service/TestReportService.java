@@ -1,10 +1,10 @@
-package com.example.testrpt.service;
+package com.bp0296795.testrpt.service;
 
-import com.example.testrpt.model.AnalysisResult;
-import com.example.testrpt.model.TestExecutionRun;
-import com.example.testrpt.reporting.ReportGenerator;
-import com.example.testrpt.reporting.ReportWriter;
-import com.example.testrpt.repository.TestExecutionRepository;
+import com.bp0296795.testrpt.model.AnalysisResult;
+import com.bp0296795.testrpt.model.TestExecutionRun;
+import com.bp0296795.testrpt.reporting.ReportGenerator;
+import com.bp0296795.testrpt.reporting.ReportWriter;
+import com.bp0296795.testrpt.repository.TestExecutionRepository;
 
 import java.util.List;
 
