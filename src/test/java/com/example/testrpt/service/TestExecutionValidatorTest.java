@@ -4,14 +4,14 @@ import com.example.testrpt.model.FailureType;
 import com.example.testrpt.model.TestCaseResult;
 import com.example.testrpt.model.TestExecutionRun;
 import com.example.testrpt.model.TestStatus;
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
 
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Set;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.testng.Assert.assertFalse;
+import static org.testng.Assert.assertTrue;
 
 public class TestExecutionValidatorTest {
     private final TestExecutionValidator validator = new TestExecutionValidator();
