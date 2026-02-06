@@ -11,8 +11,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class TestExecutionAnalyzer {
-    public AnalysisResult analyze(List<TestExecutionRun> runs) {
+public class TestExecutionAnalyser {
+    public AnalysisResult Analyse(List<TestExecutionRun> runs) {
         int totalRuns = runs.size();
         int totalTests = 0;
 

@@ -9,7 +9,7 @@
     "results": [
       {
         "testId": "PAY-101",
-        "name": "should authorize card payments",
+        "name": "should Authorise card payments",
         "status": "PASSED",
         "durationMillis": 3200,
         "tags": ["payments", "smoke"]

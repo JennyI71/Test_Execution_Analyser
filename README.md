@@ -1,10 +1,10 @@
 # Test Execution Analysis and Reporting Tool
 
-Standalone Java CLI that ingests test execution runs from JSON, analyzes results, and generates a report.
+Standalone Java CLI that ingests test execution runs from JSON, Analyses results, and generates a report.
 
 ## Quick Start (Run the Sample)
 ```powershell
-cd Adv_Programming_App
+cd Test_Execution_Analyser
 mvn -q -DskipTests package
 mvn -q --% exec:java -Dexec.mainClass=com.example.testrpt.App -Dexec.args=".\src\main\resources\sample-runs.json .\report.txt"
 mvn test
@@ -21,10 +21,10 @@ Outputs:
 
 ## Project Structure
 - `src/main/java/com/example/testrpt/App.java`: CLI entry point (parses args, calls the service).
-- `src/main/java/com/example/testrpt/service/TestReportService.java`: Orchestrates load -> validate -> analyze -> report -> write.
+- `src/main/java/com/example/testrpt/service/TestReportService.java`: Orchestrates load -> validate -> Analyse -> report -> write.
 - `src/main/java/com/example/testrpt/repository/FileTestExecutionRepository.java`: Loads runs from JSON file.
 - `src/main/java/com/example/testrpt/service/TestExecutionValidator.java`: Validates input data and business rules.
-- `src/main/java/com/example/testrpt/service/TestExecutionAnalyzer.java`: Aggregates counts and failure rates.
+- `src/main/java/com/example/testrpt/service/TestExecutionAnalyser.java`: Aggregates counts and failure rates.
 - `src/main/java/com/example/testrpt/reporting/ReportGenerator.java`: Builds the human-readable report string.
 - `src/main/java/com/example/testrpt/reporting/ReportWriter.java`: Writes report to console and timestamped file in `reports/`.
 - `src/main/resources/sample-runs.json`: Sample input to run the app quickly.

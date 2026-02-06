@@ -2,7 +2,7 @@ package com.example.testrpt;
 
 import com.example.testrpt.repository.FileTestExecutionRepository;
 import com.example.testrpt.repository.TestExecutionRepository;
-import com.example.testrpt.service.TestExecutionAnalyzer;
+import com.example.testrpt.service.TestExecutionAnalyser;
 import com.example.testrpt.service.TestExecutionValidator;
 import com.example.testrpt.service.TestReportService;
 import com.example.testrpt.service.ValidationError;
@@ -21,11 +21,11 @@ public class App {
 
         TestExecutionRepository repository = new FileTestExecutionRepository();
         TestExecutionValidator validator = new TestExecutionValidator();
-        TestExecutionAnalyzer analyzer = new TestExecutionAnalyzer();
+        TestExecutionAnalyser Analyser = new TestExecutionAnalyser();
         TestReportService service = new TestReportService(
                 repository,
                 validator,
-                analyzer,
+                Analyser,
                 new ReportGenerator(),
                 new ReportWriter()
         );

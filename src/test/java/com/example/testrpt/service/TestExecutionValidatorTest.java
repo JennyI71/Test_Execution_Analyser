@@ -27,7 +27,7 @@ public class TestExecutionValidatorTest {
                 LocalDateTime.parse("2026-02-06T10:05:00"),
                 List.of(new TestCaseResult(
                         "T-1",
-                        "should authorize",
+                        "should Authorise",
                         TestStatus.PASSED,
                         1200,
                         null,

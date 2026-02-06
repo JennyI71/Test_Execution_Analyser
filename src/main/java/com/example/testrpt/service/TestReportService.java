@@ -11,18 +11,18 @@ import java.util.List;
 public class TestReportService {
     private final TestExecutionRepository repository;
     private final TestExecutionValidator validator;
-    private final TestExecutionAnalyzer analyzer;
+    private final TestExecutionAnalyser Analyser;
     private final ReportGenerator generator;
     private final ReportWriter writer;
 
     public TestReportService(TestExecutionRepository repository,
                              TestExecutionValidator validator,
-                             TestExecutionAnalyzer analyzer,
+                             TestExecutionAnalyser Analyser,
                              ReportGenerator generator,
                              ReportWriter writer) {
         this.repository = repository;
         this.validator = validator;
-        this.analyzer = analyzer;
+        this.Analyser = Analyser;
         this.generator = generator;
         this.writer = writer;
     }
@@ -34,7 +34,7 @@ public class TestReportService {
             return ServiceResult.validationFailed(validation);
         }
 
-        AnalysisResult result = analyzer.analyze(runs);
+        AnalysisResult result = Analyser.Analyse(runs);
         String report = generator.generate(result, runs);
         writer.writeToConsole(report);
         String resolvedPath = writer.writeToFile(report, outputPath);

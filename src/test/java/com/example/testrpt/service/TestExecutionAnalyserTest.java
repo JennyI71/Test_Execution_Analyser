@@ -13,8 +13,8 @@ import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class TestExecutionAnalyzerTest {
-    private final TestExecutionAnalyzer analyzer = new TestExecutionAnalyzer();
+public class TestExecutionAnalyserTest {
+    private final TestExecutionAnalyser Analyser = new TestExecutionAnalyser();
 
     @Test
     void aggregatesStatusAndFailureCounts() {
@@ -32,7 +32,7 @@ public class TestExecutionAnalyzerTest {
                 )
         );
 
-        AnalysisResult result = analyzer.analyze(List.of(run));
+        AnalysisResult result = Analyser.Analyse(List.of(run));
         assertEquals(1, result.getTotalRuns());
         assertEquals(3, result.getTotalTests());
         assertEquals(1, result.getStatusCounts().get(TestStatus.PASSED));
@@ -69,7 +69,7 @@ public class TestExecutionAnalyzerTest {
                 )
         );
 
-        AnalysisResult result = analyzer.analyze(List.of(run1, run2));
+        AnalysisResult result = Analyser.Analyse(List.of(run1, run2));
         assertEquals(0.5, result.getFailureRateByTestId().get("T-1"));
         assertEquals(0.0, result.getFailureRateByTestId().get("T-2"));
         assertEquals(1, result.getFailuresByTestId().get("T-1"));
