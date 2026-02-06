@@ -1,0 +1,28 @@
+[
+  {
+    "runId": "run-2026-02-06-001",
+    "suiteName": "payments-regression",
+    "environment": "staging",
+    "triggeredBy": "ci-pipeline",
+    "startTime": "2026-02-06T08:01:00",
+    "endTime": "2026-02-06T08:12:30",
+    "results": [
+      {
+        "testId": "PAY-101",
+        "name": "should authorize card payments",
+        "status": "PASSED",
+        "durationMillis": 3200,
+        "tags": ["payments", "smoke"]
+      },
+      {
+        "testId": "PAY-201",
+        "name": "should reject expired cards",
+        "status": "FAILED",
+        "durationMillis": 2100,
+        "failureType": "ASSERTION",
+        "failureMessage": "Expected validation error but got success",
+        "tags": ["payments", "negative"]
+      }
+    ]
+  }
+]

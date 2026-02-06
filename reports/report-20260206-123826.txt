@@ -1,0 +1,23 @@
+Test Execution Analysis Report
+==============================
+Runs: 1
+Tests: 2
+
+Status Counts
+- PASSED: 1
+- FAILED: 1
+- SKIPPED: 0
+- ERROR: 0
+
+Failure Types
+- ASSERTION: 1
+- TIMEOUT: 0
+- INFRASTRUCTURE: 0
+- DATA_ISSUE: 0
+- UNKNOWN: 0
+
+Top Failing Tests
+- PAY-201: 1 failures (rate 100.00%)
+
+Run Overview
+- run-2026-02-06-001 | payments-regression | staging | 2026-02-06 08:01:00 -> 2026-02-06 08:12:30 | tests: 2
