@@ -53,7 +53,6 @@ Shape (simplified):
 ```powershell
 mvn test
 ```
-Unit tests use TestNG.
 Reports are generated under `target/surefire-reports/`.
 
 ## Why It's Useful (For Test Automation Engineers)

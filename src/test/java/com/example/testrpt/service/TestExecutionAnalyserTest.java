@@ -5,13 +5,13 @@ import com.example.testrpt.model.FailureType;
 import com.example.testrpt.model.TestCaseResult;
 import com.example.testrpt.model.TestExecutionRun;
 import com.example.testrpt.model.TestStatus;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.Test;
 
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Set;
 
-import static org.testng.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestExecutionAnalyserTest {
     private final TestExecutionAnalyser Analyser = new TestExecutionAnalyser();
